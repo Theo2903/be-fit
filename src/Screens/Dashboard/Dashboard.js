@@ -28,7 +28,6 @@ export const Dashboard = () => {
                     <Text>Test</Text>
                 </View>
                 <View style={styles.searchBarArea}>
-                    {/* Barre de recherche des plats */}
                     <SearchBar
                         placeholder='Search'
                         value={search}
