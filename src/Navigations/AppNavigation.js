@@ -10,7 +10,7 @@ const Stack = createStackNavigator();
 export const AppNavigator = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Dashboard">
+      <Stack.Navigator initialRouteName="RecipeDetail">
         <Stack.Screen
           name="GetStarted"
           component={GetStarted}
@@ -26,7 +26,11 @@ export const AppNavigator = () => {
           component={NavigationContainer}
           options={{ headerShown: false }}
         />
-        <Stack.Screen name="RecipeDetail" component={RecipeDetail} />
+        <Stack.Screen
+          name="RecipeDetail"
+          component={RecipeDetail}
+          options={{ headerShown: false }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
