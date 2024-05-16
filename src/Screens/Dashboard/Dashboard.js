@@ -15,24 +15,17 @@ import { RecipeCard } from "../../Components/RecipeCard/RecipeCard";
 import Recipies from "../../../data/Recipies.json";
 import { useNavigation } from "@react-navigation/native";
 import { Ionicons } from "@expo/vector-icons";
+import { AlimentList } from "../AlimentsList/AlimentsList";
 
 export const Dashboard = () => {
+  const [inputValue, setInputValue] = useState("");
   const [search, setSearch] = useState("");
-  const [list, setList] = useState(["haram", "harss", "goat"]);
-  const [searchedList, setSearchedList] = useState([]);
+  const [isUseSearching, setIsUserSearching] = useState(false);
   const [selectDietType, setSelectedDietType] = useRecoilState(
     selectedDietTypeState
   );
 
   const navigation = useNavigation();
-
-  useEffect(() => {
-    const filteredList = list.filter((item) =>
-      item.toLowerCase().includes(search.toLowerCase())
-    );
-
-    setSearchedList(filteredList);
-  }, [search]);
 
   const handlePressDietType = (diet) => {
     setSelectedDietType(diet.id);
@@ -42,6 +35,19 @@ export const Dashboard = () => {
     navigation.navigate("RecipeDetail", {
       recipeId: recipe,
     });
+  };
+
+  const handleOnFocusSearchBar = () => {
+    setIsUserSearching(true);
+  };
+
+  const handleOnCancelSearchBar = () => {
+    setSearch("")
+    setIsUserSearching(false);
+  };
+  
+  const handleSubmitEditing = () => {
+    setSearch(inputValue);
   };
 
   return (
@@ -59,41 +65,54 @@ export const Dashboard = () => {
         <SearchBar
           containerStyle={{ backgroundColor: "#f2f2f2" }}
           platform="ios"
-          placeholder="Recherche"
-          value={search}
-          onChangeText={(e) => setSearch(e)}
+          placeholder={
+            isUseSearching ? "Entrez au moins 3 caractères" : "Recherche"
+          }
+          value={inputValue}
+          cancelButtonTitle="Annuler"
+          onChangeText={(e) => setInputValue(e)}
+          onFocus={() => handleOnFocusSearchBar()}
+          onCancel={() => handleOnCancelSearchBar()}
+          onSubmitEditing={() => handleSubmitEditing()}
+          returnKeyType="search"
         />
       </View>
-      <View style={s.dietType}>
-        <ScrollView horizontal>
-          {DietType.map((diet) => (
-            <Chip
-              title={diet.label}
-              key={diet.id}
-              type={diet.id === selectDietType ? "outline" : "solid"}
-              onPress={() => handlePressDietType(diet)}
-              containerStyle={{ marginHorizontal: 5 }}
-            />
-          ))}
-        </ScrollView>
-      </View>
-      <View style={s.recipeSection}>
-        <Text style={s.sectionTitleText}>Recettes</Text>
-        <ScrollView horizontal>
-          {Recipies.filter((recipe) => recipe.diet_type === selectDietType).map(
-            (recipe) => (
-              <RecipeCard
-                title={recipe.title}
-                key={recipe.id}
-                description={recipe.description}
-                calories={recipe.calories}
-                onPress={() => handleNavigateRecipes(recipe.id)}
-                imageSource={recipe.image_url}
-              />
-            )
-          )}
-        </ScrollView>
-      </View>
+      {isUseSearching ? (
+        <AlimentList searchValue={search} />
+      ) : (
+        <>
+          <View style={s.dietType}>
+            <ScrollView horizontal>
+              {DietType.map((diet) => (
+                <Chip
+                  title={diet.label}
+                  key={diet.id}
+                  type={diet.id === selectDietType ? "outline" : "solid"}
+                  onPress={() => handlePressDietType(diet)}
+                  containerStyle={{ marginHorizontal: 5 }}
+                />
+              ))}
+            </ScrollView>
+          </View>
+          <View style={s.recipeSection}>
+            <Text style={s.sectionTitleText}>Recettes</Text>
+            <ScrollView horizontal>
+              {Recipies.filter(
+                (recipe) => recipe.diet_type === selectDietType
+              ).map((recipe) => (
+                <RecipeCard
+                  title={recipe.title}
+                  key={recipe.id}
+                  description={recipe.description}
+                  calories={recipe.calories}
+                  onPress={() => handleNavigateRecipes(recipe.id)}
+                  imageSource={recipe.image_url}
+                />
+              ))}
+            </ScrollView>
+          </View>
+        </>
+      )}
     </Container>
   );
 };
