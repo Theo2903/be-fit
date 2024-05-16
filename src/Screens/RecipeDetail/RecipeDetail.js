@@ -1,35 +1,33 @@
-// UI & Component
-import { View, Text, StyleSheet, Image, Dimensions } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  Image,
+  Dimensions,
+  ScrollView,
+} from "react-native";
 import { Container } from "../../Components/Container/Container";
 import { BackButton } from "../../Components/Button/BackButton";
-import { ProgressChart } from "react-native-chart-kit";
-
-const chartConfig = {
-  backgroundGradientFrom: "#FFFF",
-  backgroundGradientFromOpacity: 0,
-  backgroundGradientTo: "#FFFF",
-  backgroundGradientToOpacity: 0.5,
-  color: (opacity = 1) => `rgba(26, 255, 255, ${opacity})`,
-  barPercentage: 0.5,
-};
-
-const data = {
-  labels: ["Calories"],
-  data: [0.7],
-};
+import CircularProgress from "react-native-circular-progress-indicator";
+import { useRoute } from "@react-navigation/native";
+import Recipes from "../../../data/Recipies.json";
 
 export const RecipeDetail = () => {
+  const route = useRoute();
+  const id = route.params?.recipeId;
+
+  const currentRecipe = Recipes.find((recipe) => recipe.id === id);
+
   return (
     <View style={s.container}>
       <Container>
         <View style={s.headerContainer}>
           <BackButton />
-          <Text style={s.headerText}>Recette #1</Text>
         </View>
         <View style={s.imageContainer}>
           <Image
             source={{
-              uri: "https://i0.wp.com/www.programme-malin.com/wp-content/uploads/2020/09/P%C3%A2tes-%C3%A0-la-bolognaise.jpg?fit=1920%2C1080&ssl=1",
+              uri: currentRecipe.image_url,
             }}
             style={s.image}
           />
@@ -37,18 +35,67 @@ export const RecipeDetail = () => {
       </Container>
       <View style={s.recipiesDrawer}>
         <Container>
-          <View style={s.chartContainer}>
-            <ProgressChart
-              data={data}
-              width={100}
-              height={90}
-              strokeWidth={16}
-              radius={32}
-              chartConfig={chartConfig}
-              hideLegend={true}
-            />
-            <Text>205 cal</Text>
-          </View>
+          <ScrollView>
+            <View>
+              <View style={s.chartContainer}>
+                <CircularProgress
+                  value={currentRecipe.calories}
+                  radius={80}
+                  progressValueColor={"black"}
+                  maxValue={1000}
+                  title={"CAL"}
+                  titleColor={"black"}
+                  titleStyle={{ fontWeight: "bold" }}
+                />
+                <View style={s.macroChartContainer}>
+                  <View style={s.macroContainer}>
+                    <CircularProgress
+                      value={currentRecipe.proteins}
+                      valueSuffix={"g"}
+                      radius={25}
+                    />
+                    <Text style={s.macroText}>Proteine</Text>
+                  </View>
+                  <View style={s.macroContainer}>
+                    <CircularProgress
+                      value={currentRecipe.lipids}
+                      valueSuffix={"g"}
+                      radius={25}
+                    />
+                    <Text style={s.macroText}>Lipide</Text>
+                  </View>
+                  <View style={s.macroContainer}>
+                    <CircularProgress
+                      value={currentRecipe.carbohydrate}
+                      valueSuffix={"g"}
+                      radius={25}
+                    />
+                    <Text style={s.macroText}>Glucide</Text>
+                  </View>
+                </View>
+              </View>
+              <View style={s.recipeInfoContainer}>
+                <Text style={s.recipeTitle}>{currentRecipe.title}</Text>
+                <Text style={s.recipeDescription}>
+                  {currentRecipe.description}
+                </Text>
+                <View style={s.divider} />
+                <Text style={s.sectionTitle}>Ingrédients :</Text>
+                {currentRecipe.ingredients.map((ingredient, index) => (
+                  <Text key={index} style={s.listItem}>
+                    &bull; {ingredient}
+                  </Text>
+                ))}
+                <View style={s.divider} />
+                <Text style={s.sectionTitle}>Étapes à suivre :</Text>
+                {currentRecipe.steps.map((step, index) => (
+                  <Text key={index} style={s.listItem}>{`${
+                    index + 1
+                  }. ${step}`}</Text>
+                ))}
+              </View>
+            </View>
+          </ScrollView>
         </Container>
       </View>
     </View>
@@ -57,13 +104,11 @@ export const RecipeDetail = () => {
 
 const s = StyleSheet.create({
   container: {
-    backgroundColor: "red",
     height: "100%",
   },
   headerContainer: {
     flexDirection: "row",
     alignItems: "center",
-    paddingBottom: 20,
   },
   headerText: {
     flex: 1,
@@ -72,20 +117,55 @@ const s = StyleSheet.create({
     fontSize: 20,
   },
   imageContainer: {
-    height: "80%",
-  },
-  image: {
-    width: "auto",
     height: "100%",
   },
+  image: {
+    width: "100%",
+    height: 350,
+  },
   recipiesDrawer: {
-    height: "60%",
+    height: "50%",
     backgroundColor: "#FFFF",
     borderColor: "#FFFF",
     borderWidth: 5,
     borderRadius: 30,
   },
   chartContainer: {
-    flexDirection: "row"
+    flexDirection: "row",
+    justifyContent: "space-around",
+  },
+  recipeInfoContainer: {
+    marginTop: 20,
+  },
+  recipeTitle: {
+    fontSize: 24,
+    fontWeight: "bold",
+    marginBottom: 10,
+  },
+  recipeDescription: {
+    fontSize: 16,
+  },
+  divider: {
+    borderBottomWidth: 1,
+    borderBottomColor: "#CCCCCC",
+    marginVertical: 10,
+  },
+  sectionTitle: {
+    fontSize: 20,
+    fontWeight: "bold",
+    marginBottom: 10,
+  },
+  listItem: {
+    fontSize: 16,
+    lineHeight: 24,
+  },
+  macroChartContainer: {},
+  macroContainer: {
+    paddingTop: 4,
+    flexDirection: "row",
+  },
+  macroText: {
+    marginLeft: 10,
+    marginTop: 15,
   },
 });
