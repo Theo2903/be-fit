@@ -1,0 +1,85 @@
+import React from "react";
+import {
+  View,
+  Text,
+  StyleSheet,
+  Image,
+  Dimensions,
+  TouchableOpacity,
+} from "react-native";
+
+export const RecipeCard = ({
+  title,
+  description,
+  calories,
+  imageSource,
+  style,
+  onPress,
+}) => {
+  return (
+    <View style={[s.container, style]}>
+      <TouchableOpacity onPress={onPress}>
+        <Image
+          source={{
+            uri: imageSource,
+          }}
+          style={s.image}
+        />
+        <View style={s.content}>
+          <View style={s.textContainer}>
+            <Text style={s.title}>{title}</Text>
+          </View>
+          <View style={s.textContainer}>
+            <Text style={s.description}>{description}</Text>
+          </View>
+          <View style={s.textContainer}>
+            <Text style={s.calories}>Calories: {calories}</Text>
+          </View>
+        </View>
+      </TouchableOpacity>
+    </View>
+  );
+};
+
+const windowWidth = Dimensions.get("window").width;
+
+const s = StyleSheet.create({
+  container: {
+    marginRight: 15,
+    backgroundColor: "#f9f9f9",
+    borderRadius: 10,
+    marginVertical: 10,
+    padding: 10,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
+    width: windowWidth * 0.6,
+  },
+  image: {
+    width: "100%",
+    height: 200,
+    borderRadius: 10,
+    marginBottom: 10,
+  },
+  content: {},
+  textContainer: {},
+  title: {
+    fontSize: 20,
+    fontWeight: "bold",
+    marginBottom: 5,
+  },
+  description: {
+    fontSize: 16,
+    marginBottom: 5,
+  },
+  calories: {
+    fontSize: 14,
+    fontStyle: "italic",
+    color: "#888",
+  },
+});
