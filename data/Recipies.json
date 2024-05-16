@@ -1,0 +1,343 @@
+[
+  {
+    "id": 1,
+    "diet_type": 1,
+    "title": "Poulet grillé avec légumes rôtis",
+    "description": "Un plat sain et délicieux avec du poulet grillé tendre et des légumes colorés rôtis au four.",
+    "image_url": "https://jow.fr/_next/image?url=https%3A%2F%2Fstatic.jow.fr%2F880x880%2Frecipes%2FTk8wfeLJo3.png&w=2560&q=100",
+    "ingredients": [
+      "4 filets de poulet",
+      "2 courgettes, coupées en rondelles",
+      "2 poivrons rouges, coupés en lanières",
+      "1 oignon rouge, coupé en quartiers",
+      "2 cuillères à soupe d'huile d'olive",
+      "1 cuillère à soupe de jus de citron",
+      "1 cuillère à café de paprika",
+      "Sel et poivre, au goût",
+      "Persil frais, pour garnir"
+    ],
+    "steps": [
+      "Préchauffez votre four à 200°C.",
+      "Dans un grand bol, mélangez les courgettes, les poivrons rouges et les quartiers d'oignon avec l'huile d'olive, le jus de citron, le paprika, le sel et le poivre.",
+      "Étalez les légumes sur une plaque de cuisson et faites-les rôtir au four pendant environ 20-25 minutes, ou jusqu'à ce qu'ils soient tendres et légèrement dorés.",
+      "Pendant ce temps, assaisonnez les filets de poulet avec du sel et du poivre, puis faites-les griller sur un gril chaud pendant environ 6-8 minutes de chaque côté, ou jusqu'à ce qu'ils soient bien cuits.",
+      "Servez le poulet grillé avec les légumes rôtis, garni de persil frais."
+    ],
+    "calories": 350,
+    "proteins": 30,
+    "lipids": 12,
+    "carbohydrate": 25
+  },
+  {
+    "id": 2,
+    "diet_type": 1,
+    "title": "Salade de quinoa aux légumes grillés",
+    "description": "Une salade légère et nourrissante avec du quinoa, des légumes grillés et une vinaigrette fraîche à la menthe.",
+    "image_url": "https://static.jow.fr/880x880/recipes/oMxCasylxPah5Q.png",
+    "ingredients": [
+      "1 tasse de quinoa cuit",
+      "2 carottes, coupées en fines lamelles",
+      "1 courgette, coupée en rondelles",
+      "1 poivron jaune, coupé en lanières",
+      "1/2 tasse de pois chiches cuits",
+      "1/4 tasse de raisins secs",
+      "1/4 tasse de noix de cajou, grillées",
+      "Feuilles de menthe fraîche, pour garnir"
+    ],
+    "steps": [
+      "Dans un grand bol, mélangez le quinoa cuit, les carottes, la courgette, le poivron jaune, les pois chiches, les raisins secs et les noix de cajou.",
+      "Dans un petit bol, préparez la vinaigrette en mélangeant 2 cuillères à soupe d'huile d'olive, 1 cuillère à soupe de vinaigre de cidre, 1 cuillère à soupe de jus de citron, du sel et du poivre.",
+      "Versez la vinaigrette sur la salade de quinoa et mélangez bien.",
+      "Garnissez de feuilles de menthe fraîche avant de servir."
+    ],
+    "calories": 320,
+    "proteins": 10,
+    "lipids": 15,
+    "carbohydrate": 40
+  },
+  {
+    "id": 3,
+    "diet_type": 1,
+    "title": "Pâtes primavera",
+    "description": "Un plat de pâtes végétarien léger et coloré avec des légumes frais et des herbes parfumées.",
+    "image_url": "https://backend.panzani.fr/app/uploads/2023/10/plats-dosage.png",
+    "ingredients": [
+      "250g de pâtes (de votre choix)",
+      "1 courgette, coupée en dés",
+      "1 poivron rouge, coupé en lanières",
+      "1 poivron jaune, coupé en lanières",
+      "1 oignon rouge, émincé",
+      "2 gousses d'ail, émincées",
+      "2 tomates, coupées en dés",
+      "2 cuillères à soupe d'huile d'olive",
+      "Basilic frais, haché, pour garnir",
+      "Parmesan râpé, pour servir (facultatif)"
+    ],
+    "steps": [
+      "Faites cuire les pâtes selon les instructions sur l'emballage. Égouttez-les et réservez.",
+      "Pendant ce temps, dans une grande poêle, chauffez l'huile d'olive à feu moyen.",
+      "Ajoutez l'oignon et l'ail, et faites-les revenir jusqu'à ce qu'ils soient dorés et parfumés.",
+      "Ajoutez les courgettes et les poivrons, et faites-les sauter pendant quelques minutes jusqu'à ce qu'ils soient tendres mais encore croquants.",
+      "Ajoutez les tomates et laissez mijoter quelques minutes de plus.",
+      "Incorporez les pâtes cuites dans la poêle avec les légumes, et mélangez bien.",
+      "Servez les pâtes primavera chaudes, garnies de basilic frais et de parmesan râpé si désiré."
+    ],
+    "calories": 300,
+    "proteins": 8,
+    "lipids": 10,
+    "carbohydrate": 45
+  },
+  {
+    "id": 4,
+    "diet_type": 1,
+    "title": "Saumon poché avec asperges",
+    "description": "Un plat léger et sain avec du saumon tendre poché et des asperges croustillantes.",
+    "image_url": "https://png.pngtree.com/png-clipart/20231002/original/pngtree-garlic-spaghetti-with-grilled-salmon-on-white-dish-png-image_13064054.png",
+    "ingredients": [
+      "4 filets de saumon",
+      "1 botte d'asperges, parées",
+      "1 citron, coupé en tranches",
+      "2 cuillères à soupe de beurre",
+      "2 gousses d'ail, émincées",
+      "1 cuillère à soupe de câpres (facultatif)",
+      "Sel et poivre, au goût"
+    ],
+    "steps": [
+      "Dans une grande poêle, faites fondre le beurre à feu moyen.",
+      "Ajoutez l'ail émincé et les câpres, si vous en utilisez, et faites-les revenir pendant quelques minutes jusqu'à ce qu'ils soient dorés et parfumés.",
+      "Ajoutez les filets de saumon dans la poêle, côté peau vers le bas, et faites-les cuire pendant environ 3-4 minutes de chaque côté, ou jusqu'à ce qu'ils soient bien dorés.",
+      "Pendant ce temps, faites blanchir les asperges dans une casserole d'eau bouillante pendant 2-3 minutes, puis égouttez-les.",
+      "Servez le saumon poché avec les asperges, garni de tranches de citron et assaisonné de sel et de poivre au goût."
+    ],
+    "calories": 320,
+    "proteins": 30,
+    "lipids": 15,
+    "carbohydrate": 10
+  },
+  {
+    "id": 5,
+    "diet_type": 2,
+    "title": "Pâtes carbonara",
+    "image_url": "https://png.pngtree.com/png-clipart/20231020/original/pngtree-pasta-carbonara-italian-food-png-image_13384725.png",
+    "description": "Un plat de pâtes crémeux et indulgent avec une sauce carbonara riche et savoureuse.",
+    "ingredients": [
+      "250g de spaghetti",
+      "150g de pancetta ou de bacon, coupé en dés",
+      "3 jaunes d'œufs",
+      "50g de Parmesan râpé, plus un peu pour servir",
+      "2 cuillères à soupe de crème fraîche",
+      "2 gousses d'ail, émincées",
+      "Poivre noir fraîchement moulu, au goût"
+    ],
+    "steps": [
+      "Faites cuire les pâtes dans une grande casserole d'eau bouillante salée selon les instructions sur l'emballage.",
+      "Pendant ce temps, faites revenir la pancetta ou le bacon dans une poêle à feu moyen jusqu'à ce qu'il soit doré et croustillant.",
+      "Dans un bol, fouettez ensemble les jaunes d'œufs, le Parmesan râpé, la crème fraîche et l'ail émincé.",
+      "Égouttez les pâtes cuites, en réservant une tasse d'eau de cuisson.",
+      "Versez immédiatement les pâtes chaudes dans la poêle avec la pancetta ou le bacon, et mélangez bien pour les enrober de graisse.",
+      "Ajoutez le mélange d'œufs et de fromage aux pâtes chaudes et mélangez rapidement pour les enrober de la sauce crémeuse.",
+      "Si nécessaire, ajoutez un peu d'eau de cuisson réservée pour ajuster la consistance de la sauce.",
+      "Assaisonnez généreusement de poivre noir fraîchement moulu et servez immédiatement, saupoudré de Parmesan râpé supplémentaire."
+    ],
+    "calories": 600,
+    "proteins": 20,
+    "lipids": 35,
+    "carbohydrate": 50
+  },
+  {
+    "id": 6,
+    "diet_type": 2,
+    "title": "Salade de quinoa aux légumes grillés et fromage de chèvre",
+    "description": "Une salade copieuse avec du quinoa, des légumes grillés, du fromage de chèvre crémeux et une vinaigrette balsamique.",
+    "image_url": "https://static.jow.fr/880x880/recipes/oMxCasylxPah5Q.png",
+    "ingredients": [
+      "1 tasse de quinoa cuit",
+      "2 courgettes, coupées en rondelles",
+      "2 poivrons rouges, coupés en lanières",
+      "1 oignon rouge, coupé en quartiers",
+      "1 tasse de tomates cerises, coupées en deux",
+      "1/2 tasse de fromage de chèvre émietté",
+      "1/4 tasse de basilic frais, haché",
+      "2 cuillères à soupe d'huile d'olive",
+      "2 cuillères à soupe de vinaigre balsamique",
+      "Sel et poivre, au goût"
+    ],
+    "steps": [
+      "Préchauffez votre gril à feu moyen.",
+      "Dans un grand bol, mélangez les courgettes, les poivrons rouges et les quartiers d'oignon avec 1 cuillère à soupe d'huile d'olive, du sel et du poivre.",
+      "Faites griller les légumes pendant environ 10 minutes, ou jusqu'à ce qu'ils soient tendres et légèrement dorés.",
+      "Dans un autre bol, mélangez le quinoa cuit avec les légumes grillés, les tomates cerises, le fromage de chèvre émietté et le basilic frais.",
+      "Dans un petit bol, préparez la vinaigrette en mélangeant 1 cuillère à soupe d'huile d'olive, le vinaigre balsamique, du sel et du poivre.",
+      "Versez la vinaigrette sur la salade de quinoa et mélangez bien.",
+      "Servez la salade de quinoa aux légumes grillés et fromage de chèvre, garnie de basilic frais."
+    ],
+    "calories": 550,
+    "proteins": 25,
+    "lipids": 30,
+    "carbohydrate": 40
+  },
+  {
+    "id": 7,
+    "diet_type": 2,
+    "title": "Poulet grillé avec légumes rôtis",
+    "description": "Un plat sain et délicieux avec du poulet grillé tendre et des légumes colorés rôtis au four.",
+    "image_url": "https://jow.fr/_next/image?url=https%3A%2F%2Fstatic.jow.fr%2F880x880%2Frecipes%2FTk8wfeLJo3.png&w=2560&q=100",
+    "ingredients": [
+      "4 filets de poulet",
+      "2 courgettes, coupées en rondelles",
+      "2 poivrons rouges, coupés en lanières",
+      "1 oignon rouge, coupé en quartiers",
+      "2 cuillères à soupe d'huile d'olive",
+      "1 cuillère à soupe de jus de citron",
+      "1 cuillère à café de paprika",
+      "Sel et poivre, au goût",
+      "Persil frais, pour garnir"
+    ],
+    "steps": [
+      "Préchauffez votre four à 200°C.",
+      "Dans un grand bol, mélangez les courgettes, les poivrons rouges et les quartiers d'oignon avec l'huile d'olive, le jus de citron, le paprika, le sel et le poivre.",
+      "Étalez les légumes sur une plaque de cuisson et faites-les rôtir au four pendant environ 20-25 minutes, ou jusqu'à ce qu'ils soient tendres et légèrement dorés.",
+      "Pendant ce temps, assaisonnez les filets de poulet avec du sel et du poivre, puis faites-les griller sur un gril chaud pendant environ 6-8 minutes de chaque côté, ou jusqu'à ce qu'ils soient bien cuits.",
+      "Servez le poulet grillé avec les légumes rôtis, garni de persil frais."
+    ],
+    "calories": 450,
+    "proteins": 40,
+    "lipids": 20,
+    "carbohydrate": 30
+  },
+  {
+    "id": 8,
+    "diet_type": 2,
+    "title": "Burger gourmand",
+    "description": "Un burger copieux avec un steak juteux, du fromage fondu, des légumes frais et une sauce maison.",
+    "image_url": "https://img.freepik.com/photos-premium/hamburger-laitue-dans-assiette-fond-blanc-vue-dessus_508835-156.jpg",
+    "ingredients": [
+      "4 pains à burger",
+      "4 steaks hachés de bœuf",
+      "4 tranches de fromage cheddar",
+      "Feuilles de laitue",
+      "Tranches de tomate",
+      "Tranches d'oignon rouge",
+      "Cornichons",
+      "Ketchup",
+      "Mayonnaise",
+      "Moutarde",
+      "Sel et poivre, au goût"
+    ],
+    "steps": [
+      "Faites chauffer une poêle ou un gril à feu moyen-élevé.",
+      "Assaisonnez les steaks hachés avec du sel et du poivre.",
+      "Faites cuire les steaks sur le gril pendant environ 4 à 5 minutes de chaque côté, ou jusqu'à ce qu'ils soient cuits à votre goût.",
+      "Pendant ce temps, faites griller les pains à burger jusqu'à ce qu'ils soient dorés et croustillants.",
+      "Juste avant de retirer les steaks du gril, placez une tranche de fromage cheddar sur le dessus de chaque steak pour qu'elle fonde légèrement.",
+      "Pour assembler les burgers, étalez de la mayonnaise sur la moitié inférieure de chaque pain à burger.",
+      "Ajoutez une feuille de laitue, une tranche de tomate, des tranches d'oignon rouge et des cornichons sur le dessus.",
+      "Placez un steak avec du fromage fondu sur le dessus, puis ajoutez du ketchup, de la moutarde et la moitié supérieure du pain à burger.",
+      "Servez immédiatement les burgers gourmands, accompagnés de frites ou de chips."
+    ],
+    "calories": 700,
+    "proteins": 35,
+    "lipids": 40,
+    "carbohydrate": 50
+  },
+  {
+    "id": 9,
+    "diet_type": 3,
+    "title": "Saumon grillé avec quinoa aux légumes",
+    "description": "Un plat équilibré et délicieux avec du saumon grillé savoureux et du quinoa aux légumes colorés.",
+    "image_url": "https://png.pngtree.com/png-clipart/20231002/original/pngtree-garlic-spaghetti-with-grilled-salmon-on-white-dish-png-image_13064054.png",
+    "ingredients": [
+      "4 filets de saumon",
+      "1 tasse de quinoa cuit",
+      "1 courgette, coupée en dés",
+      "1 poivron rouge, coupé en dés",
+      "1 poivron jaune, coupé en dés",
+      "1 oignon rouge, coupé en dés",
+      "2 cuillères à soupe d'huile d'olive",
+      "1 cuillère à soupe de jus de citron",
+      "1 cuillère à café de paprika",
+      "Sel et poivre, au goût",
+      "Persil frais, pour garnir"
+    ],
+    "steps": [
+      "Préchauffez votre gril à feu moyen.",
+      "Assaisonnez les filets de saumon avec du sel, du poivre, le jus de citron et le paprika.",
+      "Dans un grand bol, mélangez la courgette, les poivrons rouges et jaunes, l'oignon rouge avec 1 cuillère à soupe d'huile d'olive, du sel et du poivre.",
+      "Faites griller les légumes sur le gril pendant environ 10 minutes, ou jusqu'à ce qu'ils soient tendres et légèrement dorés.",
+      "Pendant ce temps, faites cuire les filets de saumon sur le gril pendant environ 4 à 5 minutes de chaque côté, ou jusqu'à ce qu'ils soient cuits à votre goût.",
+      "Dans un bol, mélangez le quinoa cuit avec les légumes grillés.",
+      "Servez les filets de saumon grillés avec le quinoa aux légumes, garni de persil frais."
+    ],
+    "calories": 450,
+    "proteins": 35,
+    "lipids": 20,
+    "carbohydrate": 30
+  },
+  {
+    "id": 10,
+    "diet_type": 3,
+    "title": "Salade de poulet César",
+    "image_url": "https://jow.com/_next/image?url=https%3A%2F%2Fstatic.jow.fr%2F880x880%2Frecipes%2FP6vMNxuDe1Nxew.png&w=2560&q=100",
+    "description": "Une version légère de la salade classique César avec du poulet grillé, des croûtons de pain maison et une vinaigrette crémeuse.",
+    "ingredients": [
+      "2 poitrines de poulet",
+      "1 tête de laitue romaine, lavée et déchiquetée",
+      "1/2 tasse de croûtons de pain maison",
+      "1/4 tasse de Parmesan râpé",
+      "Pour la vinaigrette :",
+      "1/4 tasse de mayonnaise légère",
+      "2 cuillères à soupe de yogourt grec",
+      "1 cuillère à soupe de jus de citron",
+      "1 gousse d'ail, pressée",
+      "1 cuillère à café de moutarde de Dijon",
+      "Sel et poivre, au goût"
+    ],
+    "steps": [
+      "Assaisonnez les poitrines de poulet avec du sel et du poivre, puis faites-les griller sur un gril chaud pendant environ 6-8 minutes de chaque côté, ou jusqu'à ce qu'elles soient bien cuites.",
+      "Dans un grand bol, mélangez la laitue romaine déchiquetée avec les croûtons de pain maison et le Parmesan râpé.",
+      "Dans un petit bol, préparez la vinaigrette en mélangeant la mayonnaise légère, le yogourt grec, le jus de citron, l'ail pressé, la moutarde de Dijon, du sel et du poivre.",
+      "Coupez les poitrines de poulet grillées en tranches et ajoutez-les à la salade.",
+      "Versez la vinaigrette sur la salade de poulet César et mélangez bien pour enrober tous les ingrédients.",
+      "Servez immédiatement, garni de quartiers de citron frais si désiré."
+    ],
+    "calories": 400,
+    "proteins": 30,
+    "lipids": 15,
+    "carbohydrate": 25
+  },
+  {
+    "id": 11,
+    "diet_type": 3,
+    "title": "Riz sauté aux légumes",
+    "description": "Un plat savoureux et nutritif avec du riz complet, des légumes frais et des épices aromatiques.",
+    "image_url": "https://static.jow.fr/recipes/5al0tce9h75opQ.png",
+    "ingredients": [
+      "2 tasses de riz brun cuit",
+      "1 poivron rouge, coupé en dés",
+      "1 poivron vert, coupé en dés",
+      "1 oignon, coupé en dés",
+      "2 gousses d'ail, émincées",
+      "1 carotte, coupée en dés",
+      "1 tasse de petits pois surgelés",
+      "2 cuillères à soupe de sauce soja",
+      "1 cuillère à soupe d'huile de sésame",
+      "1 cuillère à soupe de vinaigre de riz",
+      "1 cuillère à café de gingembre frais râpé",
+      "Sel et poivre, au goût",
+      "Graines de sésame, pour garnir"
+    ],
+    "steps": [
+      "Dans une grande poêle ou un wok, chauffez l'huile de sésame à feu moyen.",
+      "Ajoutez l'oignon, l'ail, les poivrons, la carotte et les petits pois surgelés, et faites sauter pendant quelques minutes jusqu'à ce que les légumes soient tendres mais encore croquants.",
+      "Ajoutez le riz cuit dans la poêle avec les légumes, et mélangez bien.",
+      "Dans un petit bol, mélangez la sauce soja, le vinaigre de riz et le gingembre râpé.",
+      "Versez la sauce sur le riz et les légumes, et mélangez bien pour enrober.",
+      "Assaisonnez avec du sel et du poivre au goût.",
+      "Servez le riz sauté aux légumes chaud, garni de graines de sésame."
+    ],
+    "calories": 380,
+    "proteins": 10,
+    "lipids": 10,
+    "carbohydrate": 60
+  }
+]

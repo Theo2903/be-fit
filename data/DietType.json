@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "label": "Perte de poids",
+    "key": "weight_loss"
+  },
+  {
+    "id": 2,
+    "label": "Prise de poids",
+    "key": "weight_gain"
+  },
+  {
+    "id": 3,
+    "label": "Maintien de poids",
+    "key": "weight_maintenance"
+  }
+]
