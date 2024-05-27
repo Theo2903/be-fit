@@ -4,10 +4,11 @@ import {
   Text,
   ScrollView,
   TouchableOpacity,
+  Alert,
 } from "react-native";
 import { Container } from "../../Components/Container/Container";
-import { SearchBar, Chip } from "react-native-elements";
-import { useEffect, useState } from "react";
+import { SearchBar, Chip, Button } from "react-native-elements";
+import { useEffect, useState, useRef } from "react";
 import DietType from "../../../data/DietType.json";
 import { useRecoilState } from "recoil";
 import { selectedDietTypeState } from "../../../recoil/RecoilState";
@@ -16,16 +17,40 @@ import Recipies from "../../../data/Recipies.json";
 import { useNavigation } from "@react-navigation/native";
 import { Ionicons } from "@expo/vector-icons";
 import { AlimentList } from "../AlimentsList/AlimentsList";
+import { CameraView, Camera } from "expo-camera";
+import BottomDrawer from "react-native-animated-bottom-drawer";
 
 export const Dashboard = () => {
   const [inputValue, setInputValue] = useState("");
   const [search, setSearch] = useState("");
   const [isUseSearching, setIsUserSearching] = useState(false);
+  const [scanned, setScanned] = useState(false);
+  const [hasPermission, setHasPermission] = useState(null);
   const [selectDietType, setSelectedDietType] = useRecoilState(
     selectedDietTypeState
   );
+  const bottomDrawerRef = useRef();
+
+  useEffect(() => {
+    (async () => {
+      const { status } = await Camera.requestCameraPermissionsAsync();
+      setHasPermission(status === "granted");
+    })();
+  }, []);
+
+  const openDrawer = () => {
+    bottomDrawerRef?.current?.open();
+  };
 
   const navigation = useNavigation();
+
+  const handleBarCodeScanned = ({ type, data }) => {
+    setScanned(true);
+    bottomDrawerRef.current.close();
+    navigation.navigate("AlimentDetail", {
+      productId: data,
+    });
+  };
 
   const handlePressDietType = (diet) => {
     setSelectedDietType(diet.id);
@@ -42,10 +67,18 @@ export const Dashboard = () => {
   };
 
   const handleOnCancelSearchBar = () => {
-    setSearch("")
+    setSearch("");
     setIsUserSearching(false);
   };
-  
+
+  const handleOpenCamera = () => {
+    if (hasPermission != true) {
+      Alert.alert("Autorisation", `Impossible d'accéder à votre camera`);
+    }
+    openDrawer();
+    setScanned(false);
+  };
+
   const handleSubmitEditing = () => {
     setSearch(inputValue);
   };
@@ -61,13 +94,19 @@ export const Dashboard = () => {
           <Ionicons name="notifications" style={s.icon} />
         </TouchableOpacity>
       </View>
-      <View style={s.searchBarArea}>
+      <View
+        style={[
+          s.searchBarArea,
+          { flexDirection: "row", alignItems: "center" },
+        ]}
+      >
         <SearchBar
-          containerStyle={{ backgroundColor: "#f2f2f2" }}
+          containerStyle={{ backgroundColor: "#f2f2f2", flex: 1 }}
           platform="ios"
           placeholder={
             isUseSearching ? "Entrez au moins 3 caractères" : "Recherche"
           }
+          searchIcon={<Ionicons name="search-outline" style={s.icon} />}
           value={inputValue}
           cancelButtonTitle="Annuler"
           onChangeText={(e) => setInputValue(e)}
@@ -76,6 +115,9 @@ export const Dashboard = () => {
           onSubmitEditing={() => handleSubmitEditing()}
           returnKeyType="search"
         />
+        <TouchableOpacity onPress={handleOpenCamera}>
+          <Ionicons name="barcode-outline" style={s.icon} />
+        </TouchableOpacity>
       </View>
       {isUseSearching ? (
         <AlimentList searchValue={search} />
@@ -113,11 +155,32 @@ export const Dashboard = () => {
           </View>
         </>
       )}
+      {hasPermission && (
+        <BottomDrawer
+          ref={(ref) => (bottomDrawerRef.current = ref)}
+          enableSnapping={true}
+          snapPoints={[700, 800]}
+          overDrag
+        >
+          <CameraView
+            onBarcodeScanned={scanned ? undefined : handleBarCodeScanned}
+            barcodeScannerSettings={{
+              barcodeTypes: ["ean13", "ean8", "upc_a", "upc_e"],
+            }}
+            style={s.camera}
+          />
+        </BottomDrawer>
+      )}
     </Container>
   );
 };
 
 const s = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: "column",
+    justifyContent: "center",
+  },
   navigationBarArea: {
     height: 60,
     justifyContent: "center",
@@ -128,6 +191,10 @@ const s = StyleSheet.create({
   },
   mealListArea: {
     backgroundColor: "black",
+  },
+  camera: {
+    width: "100%",
+    height: "100%",
   },
   dietType: {
     paddingTop: 30,
