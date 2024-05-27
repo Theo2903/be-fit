@@ -89,7 +89,7 @@ export const Dashboard = () => {
         <TouchableOpacity>
           <Ionicons name="menu" style={s.icon} />
         </TouchableOpacity>
-        <Text>Be-Fit</Text>
+        <Text style={{ fontWeight: "bold" }}>BeFit</Text>
         <TouchableOpacity>
           <Ionicons name="notifications" style={s.icon} />
         </TouchableOpacity>
