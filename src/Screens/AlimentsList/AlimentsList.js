@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { FlashList } from "@shopify/flash-list";
 import { EmptyScreen } from "../../Components/EmptyScreen/EmptyScreen";
 import { LoadingScreen } from "../../Components/EmptyScreen/LoadingScreen";
 import axios from "axios";
+import { useNavigation } from "@react-navigation/native";
 
 export const AlimentList = ({ searchValue }) => {
   const [offData, setOffData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
+  const navigation = useNavigation();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -32,9 +34,17 @@ export const AlimentList = ({ searchValue }) => {
     fetchData();
   }, [searchValue]);
 
+  const handlePressItem = (item) => {
+    navigation.navigate("AlimentDetail", {
+      productId: item.id,
+    });
+  };
+
   const renderItem = ({ item }) => (
     <View style={s.item}>
-      <Text>{item.product_name}</Text>
+      <TouchableOpacity onPress={() => handlePressItem(item)}>
+        <Text>{item.product_name}</Text>
+      </TouchableOpacity>
     </View>
   );
 

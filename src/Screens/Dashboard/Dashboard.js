@@ -107,6 +107,8 @@ export const Dashboard = () => {
             isUseSearching ? "Entrez au moins 3 caractères" : "Recherche"
           }
           searchIcon={<Ionicons name="search-outline" style={s.icon} />}
+          clearIcon={<></>} // We are setting empty icon because if we overide clear icon we lose also the function
+          // clearIcon={<Ionicons name="close-outline" style={s.icon} />}
           value={inputValue}
           cancelButtonTitle="Annuler"
           onChangeText={(e) => setInputValue(e)}
