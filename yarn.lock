@@ -6238,7 +6238,7 @@ react-native-ratings@8.0.4:
   dependencies:
     lodash "^4.17.15"
 
-react-native-reanimated@*, react-native-reanimated@>=2.0.0, react-native-reanimated@>=2.2.0, react-native-reanimated@~3.10.1:
+react-native-reanimated@>=2.0.0, react-native-reanimated@>=2.2.0, react-native-reanimated@~3.10.1:
   version "3.10.1"
   resolved "https://registry.npmjs.org/react-native-reanimated/-/react-native-reanimated-3.10.1.tgz"
   integrity sha512-sfxg6vYphrDc/g4jf/7iJ7NRi+26z2+BszPmvmk0Vnrz6FL7HYljJqTf531F1x6tFmsf+FEAmuCtTUIXFLVo9w==
@@ -6299,11 +6299,6 @@ react-native-vector-icons@>7.0.0:
   dependencies:
     prop-types "^15.7.2"
     yargs "^16.1.1"
-
-react-native-vision-camera@^4.0.5:
-  version "4.0.5"
-  resolved "https://registry.npmjs.org/react-native-vision-camera/-/react-native-vision-camera-4.0.5.tgz"
-  integrity sha512-MaNQPnRLf6RfWOvhrPb+qiwhOAQIhtWhXJck6UU5Xj0ehoC3SsZjbdPZ39V5BD1KifK1n2YnuS0tzGw/zfrBzg==
 
 react-native@*, "react-native@^0.0.0-0 || >=0.60 <1.0", "react-native@>= 0.30.0", "react-native@>= 0.50.0", react-native@>=0.46, react-native@>=0.57, react-native@>=0.59.0, react-native@0.74.1:
   version "0.74.1"
