@@ -23,11 +23,11 @@ export const SelectDiet = () => {
 
   return (
     <Container>
-      <Text style={s.title}>Choisissez votre régime</Text>
+      <Text style={s.title}>Choisissez votre régime 🍽️</Text>
       <Text style={s.subtitle}>
-        Partagez vos objectifs et laissez BeFit personnaliser votre expérience !
+        Partagez vos objectifs et laissez BeFit personnaliser votre
+        expérience ! 🎯 
       </Text>
-
       <View style={s.dietType}>
         <ScrollView horizontal>
           {DietType.map((diet) => (

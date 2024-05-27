@@ -22,13 +22,13 @@ export const GetStarted = () => {
         <Container>
           <View>
             <Text style={{ fontWeight: "bold", fontSize: 30, marginTop: 10 }}>
-              Bienvenue sur BeFit !
+              Bienvenue sur BeFit ! 🎉
             </Text>
             <Text style={{ marginTop: 20 }}>
               BeFit est une application qui vous aide à surveiller votre régime
               alimentaire en scannant vos aliments. Gardez un œil sur votre
               santé et atteignez vos objectifs nutritionnels facilement avec
-              BeFit.
+              BeFit. 🍎
             </Text>
           </View>
         </Container>
