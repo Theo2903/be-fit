@@ -13,9 +13,6 @@ export const GetStarted = () => {
   return (
     <View style={s.container}>
       <Container>
-        <View style={s.headerContainer}>
-          <Text style={s.title}>BeFit</Text>
-        </View>
         <LottieView source={HeroAnimation} style={s.animation} autoPlay loop />
       </Container>
       <View style={s.drawer}>
@@ -24,7 +21,7 @@ export const GetStarted = () => {
             <Text style={{ fontWeight: "bold", fontSize: 30, marginTop: 10 }}>
               Bienvenue sur BeFit ! 🎉
             </Text>
-            <Text style={{ marginTop: 20 }}>
+            <Text style={{ marginTop: 20, fontSize:'20px' }}>
               BeFit est une application qui vous aide à surveiller votre régime
               alimentaire en scannant vos aliments. Gardez un œil sur votre
               santé et atteignez vos objectifs nutritionnels facilement avec
@@ -36,11 +33,12 @@ export const GetStarted = () => {
           title="Commencer !"
           type="outline"
           onPress={handleOnPressBegin}
-          titleStyle={{ fontWeight: "bold", fontSize: 23 }}
+          titleStyle={{ fontWeight: "bold", fontSize: 23, color:'white' }}
           buttonStyle={{
             borderRadius: 20,
             paddingVertical: 15,
             paddingHorizontal: 40,
+            backgroundColor:'#30d6d6',
           }}
           containerStyle={{
             width: "80%",
@@ -60,6 +58,7 @@ const s = StyleSheet.create({
   },
   container: {
     height: "100%",
+    backgroundColor:'#30d6d6'
   },
   headerContainer: {
     alignItems: "center",
@@ -76,7 +75,7 @@ const s = StyleSheet.create({
     fontSize: 20,
   },
   drawer: {
-    height: "35%",
+    height: "50%",
     backgroundColor: "#FFFF",
     borderColor: "#FFFF",
     borderWidth: 5,

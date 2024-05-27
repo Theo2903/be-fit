@@ -19,7 +19,7 @@ export const AppNavigator = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator
-        initialRouteName={dietTypeState === null ? "GetStarted" : "Dashboard"}
+        initialRouteName={dietTypeState === "GetStarted"}
       >
         <Stack.Screen
           name="GetStarted"
