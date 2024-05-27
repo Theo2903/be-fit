@@ -21,7 +21,7 @@ export const GetStarted = () => {
       <View style={s.drawer}>
         <Container>
           <View>
-            <Text style={{ fontWeight: "bold", fontSize: 18, marginTop: 10 }}>
+            <Text style={{ fontWeight: "bold", fontSize: 30, marginTop: 10 }}>
               Bienvenue sur BeFit !
             </Text>
             <Text style={{ marginTop: 20 }}>
@@ -45,7 +45,7 @@ export const GetStarted = () => {
           containerStyle={{
             width: "80%",
             alignSelf: "center",
-            marginTop: 30,
+            paddingBottom: 30
           }}
         />
       </View>
@@ -56,7 +56,7 @@ export const GetStarted = () => {
 const s = StyleSheet.create({
   title: {
     fontWeight: "bold",
-    fontSize: 18,
+    fontSize: 30,
   },
   container: {
     height: "100%",
@@ -65,7 +65,7 @@ const s = StyleSheet.create({
     alignItems: "center",
   },
   animation: {
-    height: "50%",
+    height: "100%",
     width: "100%",
     alignItems: "center",
   },
@@ -76,7 +76,7 @@ const s = StyleSheet.create({
     fontSize: 20,
   },
   drawer: {
-    height: "50%",
+    height: "35%",
     backgroundColor: "#FFFF",
     borderColor: "#FFFF",
     borderWidth: 5,
