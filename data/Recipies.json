@@ -4,7 +4,7 @@
     "diet_type": 1,
     "title": "Poulet grillé avec légumes rôtis",
     "description": "Un plat sain et délicieux avec du poulet grillé tendre et des légumes colorés rôtis au four.",
-    "image_url": "https://jow.fr/_next/image?url=https%3A%2F%2Fstatic.jow.fr%2F880x880%2Frecipes%2FTk8wfeLJo3.png&w=2560&q=100",
+    "image_url": "https://img.freepik.com/photos-gratuite/poitrines-poulet-grillees-legumes_23-2148189875.jpg?t=st=1717345689~exp=1717349289~hmac=d81d0357eb1f9141499e4e784b688057a06fa14c7ca17694bcabd47a7823af3d&w=1380",
     "ingredients": [
       "4 filets de poulet",
       "2 courgettes, coupées en rondelles",
@@ -33,7 +33,7 @@
     "diet_type": 1,
     "title": "Salade de quinoa aux légumes grillés",
     "description": "Une salade légère et nourrissante avec du quinoa, des légumes grillés et une vinaigrette fraîche à la menthe.",
-    "image_url": "https://static.jow.fr/880x880/recipes/oMxCasylxPah5Q.png",
+    "image_url": "https://img.freepik.com/photos-gratuite/salade-legumes-laitue-tomate-concombre-olives-cors-aubergines-frites-vue-laterale_141793-2494.jpg?t=st=1717345843~exp=1717349443~hmac=8b703218bde9164a91f0985a8d9ccb5406fd6106dec67f157390644b98c463ed&w=1380",
     "ingredients": [
       "1 tasse de quinoa cuit",
       "2 carottes, coupées en fines lamelles",
@@ -60,7 +60,7 @@
     "diet_type": 1,
     "title": "Pâtes primavera",
     "description": "Un plat de pâtes végétarien léger et coloré avec des légumes frais et des herbes parfumées.",
-    "image_url": "https://backend.panzani.fr/app/uploads/2023/10/plats-dosage.png",
+    "image_url": "https://img.freepik.com/photos-gratuite/pates-vegetaliennes-assiette-blanche_23-2148305758.jpg?t=st=1717345927~exp=1717349527~hmac=61ff1c6b3e70bedeeee696ee705a922466580a7d1f964dc841492748e302ca3e&w=1380",
     "ingredients": [
       "250g de pâtes (de votre choix)",
       "1 courgette, coupée en dés",
@@ -92,7 +92,7 @@
     "diet_type": 1,
     "title": "Saumon poché avec asperges",
     "description": "Un plat léger et sain avec du saumon tendre poché et des asperges croustillantes.",
-    "image_url": "https://png.pngtree.com/png-clipart/20231002/original/pngtree-garlic-spaghetti-with-grilled-salmon-on-white-dish-png-image_13064054.png",
+    "image_url": "https://img.freepik.com/photos-gratuite/saumon-au-four-garni-asperges-tomates-aux-herbes_2829-14472.jpg?t=st=1717345973~exp=1717349573~hmac=f6e9b840d285e20ccb0ddc15d8022e89e1f5ff2badcc88551872a4455a46c066&w=1380",
     "ingredients": [
       "4 filets de saumon",
       "1 botte d'asperges, parées",
@@ -118,7 +118,7 @@
     "id": 5,
     "diet_type": 2,
     "title": "Pâtes carbonara",
-    "image_url": "https://png.pngtree.com/png-clipart/20231020/original/pngtree-pasta-carbonara-italian-food-png-image_13384725.png",
+    "image_url": "https://img.freepik.com/photos-gratuite/pates-au-fromage_140725-109.jpg?t=st=1717346156~exp=1717349756~hmac=a4cc4cd8ef5277387f0253946c9ecb4a14b8f08f087248539a35b4c2f330a553&w=1380",
     "description": "Un plat de pâtes crémeux et indulgent avec une sauce carbonara riche et savoureuse.",
     "ingredients": [
       "250g de spaghetti",
@@ -149,7 +149,7 @@
     "diet_type": 2,
     "title": "Salade de quinoa aux légumes grillés et fromage de chèvre",
     "description": "Une salade copieuse avec du quinoa, des légumes grillés, du fromage de chèvre crémeux et une vinaigrette balsamique.",
-    "image_url": "https://static.jow.fr/880x880/recipes/oMxCasylxPah5Q.png",
+    "image_url": "https://img.freepik.com/photos-gratuite/gros-plan-delicieuse-salade-vegetalienne-dans-bol_181624-35830.jpg?t=st=1717346196~exp=1717349796~hmac=7a74c298a6b3dfad61827038c45830d823a292c00fa0a9be913a261982b75473&w=1380",
     "ingredients": [
       "1 tasse de quinoa cuit",
       "2 courgettes, coupées en rondelles",
@@ -181,7 +181,7 @@
     "diet_type": 2,
     "title": "Poulet grillé avec légumes rôtis",
     "description": "Un plat sain et délicieux avec du poulet grillé tendre et des légumes colorés rôtis au four.",
-    "image_url": "https://jow.fr/_next/image?url=https%3A%2F%2Fstatic.jow.fr%2F880x880%2Frecipes%2FTk8wfeLJo3.png&w=2560&q=100",
+    "image_url": "https://img.freepik.com/photos-gratuite/poitrines-poulet-grillees-legumes_23-2148189875.jpg?t=st=1717345689~exp=1717349289~hmac=d81d0357eb1f9141499e4e784b688057a06fa14c7ca17694bcabd47a7823af3d&w=1380",
     "ingredients": [
       "4 filets de poulet",
       "2 courgettes, coupées en rondelles",
@@ -210,7 +210,7 @@
     "diet_type": 2,
     "title": "Burger gourmand",
     "description": "Un burger copieux avec un steak juteux, du fromage fondu, des légumes frais et une sauce maison.",
-    "image_url": "https://img.freepik.com/photos-premium/hamburger-laitue-dans-assiette-fond-blanc-vue-dessus_508835-156.jpg",
+    "image_url": "https://img.freepik.com/photos-gratuite/cheeseburger-gros-plan-bord_23-2148784508.jpg?t=st=1717346235~exp=1717349835~hmac=34cefb4c5db60fbf351bb33fbf768a389e5ba1f575f6b4bbf01729ea4e72d37a&w=1380",
     "ingredients": [
       "4 pains à burger",
       "4 steaks hachés de bœuf",
@@ -245,7 +245,7 @@
     "diet_type": 3,
     "title": "Saumon grillé avec quinoa aux légumes",
     "description": "Un plat équilibré et délicieux avec du saumon grillé savoureux et du quinoa aux légumes colorés.",
-    "image_url": "https://png.pngtree.com/png-clipart/20231002/original/pngtree-garlic-spaghetti-with-grilled-salmon-on-white-dish-png-image_13064054.png",
+    "image_url": "https://img.freepik.com/photos-gratuite/steak-saumon-grille-aux-haricots-verts-aux-tomates-cerises_1147-491.jpg?t=st=1717346272~exp=1717349872~hmac=8ee68e6dd39a76c6a5781e39645caa814d177bc4e7e2efe174504f571f9bf339&w=1380",
     "ingredients": [
       "4 filets de saumon",
       "1 tasse de quinoa cuit",
@@ -277,7 +277,7 @@
     "id": 10,
     "diet_type": 3,
     "title": "Salade de poulet César",
-    "image_url": "https://jow.com/_next/image?url=https%3A%2F%2Fstatic.jow.fr%2F880x880%2Frecipes%2FP6vMNxuDe1Nxew.png&w=2560&q=100",
+    "image_url": "https://img.freepik.com/photos-gratuite/vue-face-poulet-tranches-legumes-verts-interieur-plaque-blanche-salee-poivree-chips-vin-rouge-plats-diner-bureau-gris_140725-16105.jpg?t=st=1717346314~exp=1717349914~hmac=ccc1425604983017d385d4293a96fbca1a73c8b3aec7607fe91cbaaa79d8185c&w=1380",
     "description": "Une version légère de la salade classique César avec du poulet grillé, des croûtons de pain maison et une vinaigrette crémeuse.",
     "ingredients": [
       "2 poitrines de poulet",
@@ -310,7 +310,7 @@
     "diet_type": 3,
     "title": "Riz sauté aux légumes",
     "description": "Un plat savoureux et nutritif avec du riz complet, des légumes frais et des épices aromatiques.",
-    "image_url": "https://static.jow.fr/recipes/5al0tce9h75opQ.png",
+    "image_url": "https://img.freepik.com/photos-gratuite/assiette-epicee-mexicaine_23-2148224137.jpg?t=st=1717346345~exp=1717349945~hmac=21304a977227d64f58471231b3798b1dab1bcfb9a081bf71c297af08023a7394&w=1380",
     "ingredients": [
       "2 tasses de riz brun cuit",
       "1 poivron rouge, coupé en dés",
