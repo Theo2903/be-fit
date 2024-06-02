@@ -135,12 +135,8 @@ export const Dashboard = () => {
                   type={diet.id === selectDietType ? "outline" : "solid"}
                   onPress={() => handlePressDietType(diet)}
                   containerStyle={s.chip}
-                  buttonStyle={
-                    diet.id === selectDietType ? s.selectedChipButton : s.chipButton
-                  }
-                  titleStyle={
-                    diet.id === selectDietType ? s.selectedChipTitle : null
-                  }
+                  buttonStyle={diet.id === selectDietType ? s.selectedChipButton : s.chipButton}
+                  titleStyle={diet.id === selectDietType ? s.selectedChipTitle : null}
                 />
               ))}
             </ScrollView>

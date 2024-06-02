@@ -48,22 +48,14 @@ const windowWidth = Dimensions.get("window").width;
 const s = StyleSheet.create({
   container: {
     marginRight: 15,
-    backgroundColor: "#f9f9f9",
     borderRadius: 10,
     marginVertical: 10,
     padding: 10,
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
     elevation: 5,
     width: windowWidth * 0.6,
   },
   image: {
-    backgroundColor:'black',
+    backgroundColor:'#f9f9f9',
     width: "100%",
     height: 200,
     borderRadius: 10,
