@@ -39,13 +39,13 @@ export const GetStarted = () => {
           onPress={handleOnPressBegin}
           titleStyle={{ fontWeight: "bold", fontSize: 23, color:'white' }}
           buttonStyle={{
-            borderRadius: 30,
+            borderRadius: 20,
             paddingVertical: 15,
             paddingHorizontal: 40,
             backgroundColor:'#30d6d6',
           }}
           containerStyle={{
-            width: "80%",
+            width: "90%",
             alignSelf: "center",
             paddingBottom: 30
           }}

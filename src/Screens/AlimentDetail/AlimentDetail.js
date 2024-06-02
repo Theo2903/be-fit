@@ -5,7 +5,6 @@ import {
   Text,
   StyleSheet,
   Image,
-  Dimensions,
   ScrollView,
 } from "react-native";
 import { Container } from "../../Components/Container/Container";
@@ -14,7 +13,7 @@ import CircularProgress from "react-native-circular-progress-indicator";
 import { useNavigation, useRoute } from "@react-navigation/native";
 import { useEffect, useState } from "react";
 import { EmptyScreen } from "../../Components/EmptyScreen/EmptyScreen";
-import axios from "axios";
+import { getAliment } from "./AlimentsQuerys";
 
 export const AlimentDetail = () => {
   const [alimentData, setAlimentData] = useState(null);
@@ -23,14 +22,7 @@ export const AlimentDetail = () => {
   const navigation = useNavigation();
 
   useEffect(() => {
-    const fetchData = async () => {
-      axios
-        .get(`https://world.openfoodfacts.org/api/v0/product/${id}.json`)
-        .then((response) => {
-          setAlimentData(response.data);
-        });
-    };
-    fetchData();
+    getAliment(setAlimentData, id);
   }, []);
 
   const handleGoBack = () => {

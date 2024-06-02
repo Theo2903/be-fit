@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, ScrollView } from "react-native";
+import { View, Text, StyleSheet, ScrollView, Dimensions } from "react-native";
 import { Container } from "../../Components/Container/Container";
 import { Chip } from "react-native-elements";
 import { useRecoilState } from "recoil";
@@ -23,37 +23,34 @@ export const SelectDiet = () => {
 
   return (
     <Container>
-      <Text style={s.title}>Choisissez votre régime 🍽️</Text>
+      <Text style={s.title}>Quel est votre objectif  🍽️</Text>
       <Text style={s.subtitle}>
         Partagez vos objectifs et laissez BeFit personnaliser votre
         expérience ! 🎯 
       </Text>
-      <View style={s.dietType}>
-        <ScrollView horizontal>
-          {DietType.map((diet) => (
+      <ScrollView style={s.dietType}>
+        {DietType.map((diet) => (
+          <View key={diet.id} style={s.chipContainer}>
             <Chip
               title={diet.label}
-              key={diet.id}
-              type={diet.id === selectDietType ? "outline" : "solid"}
+              type="solid"
               onPress={() => handlePressDietType(diet)}
-              containerStyle={{ marginHorizontal: 5 }}
+              containerStyle={s.chipStyle}
+              buttonStyle={[
+                s.chipButton,
+                { backgroundColor: diet.id === selectDietType ? "#1a7a7a" : "#30d6d6" }
+              ]}
+              titleStyle={s.chipTitle}
             />
-          ))}
-        </ScrollView>
-      </View>
+          </View>
+        ))}
+      </ScrollView>
       <Button
         title="Continuer"
-        type="outline"
+        type="solid"
         onPress={handleOnPress}
-        buttonStyle={{
-          borderRadius: 20,
-          paddingVertical: 15,
-          paddingHorizontal: 40,
-        }}
-        containerStyle={{
-          alignSelf: "flex-end",
-          marginTop: 30,
-        }}
+        buttonStyle={s.continueButton}
+        containerStyle={s.continueButtonContainer}
       />
     </Container>
   );
@@ -68,7 +65,7 @@ const s = StyleSheet.create({
     marginBottom: 20,
   },
   dietType: {
-    paddingTop: 10,
+    flex: 1,
   },
   subtitle: {
     fontSize: 18,
@@ -76,5 +73,32 @@ const s = StyleSheet.create({
     color: "#555",
     textAlign: "left",
     marginBottom: 20,
+  },
+  chipContainer: {
+    padding: 10,
+    marginVertical: 5,
+    borderRadius: 20,
+  },
+  chipStyle: {
+    width: Dimensions.get("window").width - 50,  // Take full width with some padding
+  },
+  chipButton: {
+    width: "100%",
+    justifyContent: "center",
+    paddingVertical: 20,
+    backgroundColor: "#30d6d6",  // Default background color
+  },
+  chipTitle: {
+    fontSize: 18,
+    color: "#fff",
+  },
+  continueButton: {
+    borderRadius: 20,
+    paddingVertical: 15,
+    backgroundColor: "#30d6d6",
+  },
+  continueButtonContainer: {
+    width: "100%",
+    marginTop: 30,
   },
 });

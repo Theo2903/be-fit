@@ -6,8 +6,8 @@ import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { FlashList } from "@shopify/flash-list";
 import { EmptyScreen } from "../../Components/EmptyScreen/EmptyScreen";
 import { LoadingScreen } from "../../Components/EmptyScreen/LoadingScreen";
-import axios from "axios";
 import { useNavigation } from "@react-navigation/native";
+import { getAliments } from "./AlimentsListQuerys";
 
 export const AlimentList = ({ searchValue }) => {
   const [offData, setOffData] = useState([]);
@@ -15,26 +15,8 @@ export const AlimentList = ({ searchValue }) => {
   const navigation = useNavigation();
 
   useEffect(() => {
-    const fetchData = async () => {
-      if (searchValue.length >= 3) {
-        try {
-          setIsLoading(true);
-          const response = await axios.get(
-            `https://world.openfoodfacts.org/cgi/search.pl?search_terms=${searchValue}&search_simple=1&page_size=100&page=1&json=1`
-          );
-          // exclude empty name
-          setOffData(
-            response.data.products.filter(
-              (product) => product.product_name.trim() !== ""
-            )
-          );
-          setIsLoading(false);
-        } catch (error) {
-          console.error("error:", error);
-        }
-      }
-    };
-    fetchData();
+    
+    getAliments(setIsLoading, setOffData, searchValue);
   }, [searchValue]);
 
   const handlePressItem = (item) => {
