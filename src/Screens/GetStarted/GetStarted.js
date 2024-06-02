@@ -22,7 +22,7 @@ export const GetStarted = () => {
         <LottieView source={HeroAnimation} style={s.animation} autoPlay loop />
       </Container>
       <View style={s.drawer}>
-        <Container>
+        <Container sty>
           <View>
             <Text style={{ fontWeight: "bold", fontSize: 30, marginTop: 10 }}>
               Bienvenue sur BeFit ! 🎉

@@ -23,7 +23,7 @@ export const SelectDiet = () => {
 
   return (
     <Container>
-      <View style={s.header}>
+      <View style={[s.header]}>
         <Text style={s.title}>Quel est votre objectif  🍽️</Text>
         <Text style={s.subtitle}>
           Partagez vos objectifs et laissez BeFit personnaliser votre
@@ -103,9 +103,9 @@ const s = StyleSheet.create({
   },
   chipContainer: {
     height: '30%',
-    width: "90%",
+    width: "100%",
     marginBottom: 10,
-    borderRadius: 10,
+    borderRadius: 20,
 
   },
   chipStyle: {
