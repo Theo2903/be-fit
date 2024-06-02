@@ -20,19 +20,13 @@ export const RecipeDetail = () => {
 
   return (
     <View style={s.container}>
-      <Container>
-        <View style={s.headerContainer}>
-          <BackButton />
-        </View>
-        <View style={s.imageContainer}>
+      <BackButton  style={{position: 'absolute', zIndex: 100, top: 50, left: 10}}/>
           <Image
             source={{
               uri: currentRecipe.image_url,
             }}
             style={s.image}
           />
-        </View>
-      </Container>
       <View style={s.recipiesDrawer}>
         <Container>
           <ScrollView>
@@ -105,6 +99,7 @@ export const RecipeDetail = () => {
 const s = StyleSheet.create({
   container: {
     height: "100%",
+    margin: 0
   },
   headerContainer: {
     flexDirection: "row",
@@ -116,15 +111,12 @@ const s = StyleSheet.create({
     fontWeight: "bold",
     fontSize: 20,
   },
-  imageContainer: {
-    height: "100%",
-  },
   image: {
     width: "100%",
     height: 350,
   },
   recipiesDrawer: {
-    height: "50%",
+    height: "60%",
     backgroundColor: "#FFFF",
     borderColor: "#FFFF",
     borderWidth: 5,
@@ -147,7 +139,7 @@ const s = StyleSheet.create({
   },
   divider: {
     borderBottomWidth: 1,
-    borderBottomColor: "#CCCCCC",
+    borderBottomColor: "white",
     marginVertical: 10,
   },
   sectionTitle: {
