@@ -1,5 +1,3 @@
-//Autheur: Salim 
-//Date: 14.05.2024
 //Dashboard Page
 import {
   View,
@@ -10,7 +8,7 @@ import {
   Alert,
 } from "react-native";
 import { Container } from "../../Components/Container/Container";
-import { SearchBar, Chip, Button } from "react-native-elements";
+import { SearchBar, Chip } from "react-native-elements";
 import { useEffect, useState, useRef } from "react";
 import DietType from "../../../data/DietType.json";
 import { useRecoilState } from "recoil";
@@ -92,7 +90,7 @@ export const Dashboard = () => {
         <TouchableOpacity>
           <Ionicons name="menu" style={s.icon} />
         </TouchableOpacity>
-        <Text style={{ fontWeight: "bold" }}>BeFit</Text>
+        <Text style={{ fontWeight: "bold" }}>Let's make it</Text>
         <TouchableOpacity>
           <Ionicons name="notifications" style={s.icon} />
         </TouchableOpacity>
@@ -136,7 +134,13 @@ export const Dashboard = () => {
                   key={diet.id}
                   type={diet.id === selectDietType ? "outline" : "solid"}
                   onPress={() => handlePressDietType(diet)}
-                  containerStyle={{ marginHorizontal: 5 }}
+                  containerStyle={s.chip}
+                  buttonStyle={
+                    diet.id === selectDietType ? s.selectedChipButton : s.chipButton
+                  }
+                  titleStyle={
+                    diet.id === selectDietType ? s.selectedChipTitle : null
+                  }
                 />
               ))}
             </ScrollView>
@@ -221,5 +225,17 @@ const s = StyleSheet.create({
   },
   icon: {
     fontSize: 24,
+  },
+  chip: {
+    marginHorizontal: 5 
+  },
+  chipButton: {
+    backgroundColor: "#30d6d6",
+  },
+  selectedChipButton: {
+    backgroundColor: "#2e9999",
+  },
+  selectedChipTitle: {
+    color: "white",
   },
 });
