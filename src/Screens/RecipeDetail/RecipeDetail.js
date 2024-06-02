@@ -31,11 +31,17 @@ export const RecipeDetail = () => {
         <Container>
           <ScrollView>
             <View>
+            <Text style={s.recipeTitle}>{currentRecipe.title}</Text>
               <View style={s.chartContainer}>
+                
                 <CircularProgress
                   value={currentRecipe.calories}
-                  radius={80}
+                  radius={90}
                   progressValueColor={"black"}
+                  activeStrokeColor={'#30d6d6'}
+                  inActiveStrokeColor={'#30d6d6'}
+                  inActiveStrokeOpacity={0.2}
+                  color
                   maxValue={1000}
                   title={"CAL"}
                   titleColor={"black"}
@@ -46,6 +52,9 @@ export const RecipeDetail = () => {
                     <CircularProgress
                       value={currentRecipe.proteins}
                       valueSuffix={"g"}
+                      activeStrokeColor={'#30d6d6'}
+                      inActiveStrokeColor={'#30d6d6'}
+                      inActiveStrokeOpacity={0.2}
                       radius={25}
                     />
                     <Text style={s.macroText}>Proteine</Text>
@@ -54,6 +63,9 @@ export const RecipeDetail = () => {
                     <CircularProgress
                       value={currentRecipe.lipids}
                       valueSuffix={"g"}
+                      activeStrokeColor={'#30d6d6'}
+                      inActiveStrokeColor={'#30d6d6'}
+                      inActiveStrokeOpacity={0.2}
                       radius={25}
                     />
                     <Text style={s.macroText}>Lipide</Text>
@@ -62,6 +74,9 @@ export const RecipeDetail = () => {
                     <CircularProgress
                       value={currentRecipe.carbohydrate}
                       valueSuffix={"g"}
+                      activeStrokeColor={'#30d6d6'}
+                      inActiveStrokeColor={'#30d6d6'}
+                      inActiveStrokeOpacity={0.2}
                       radius={25}
                     />
                     <Text style={s.macroText}>Glucide</Text>
@@ -69,7 +84,6 @@ export const RecipeDetail = () => {
                 </View>
               </View>
               <View style={s.recipeInfoContainer}>
-                <Text style={s.recipeTitle}>{currentRecipe.title}</Text>
                 <Text style={s.recipeDescription}>
                   {currentRecipe.description}
                 </Text>
