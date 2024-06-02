@@ -2,16 +2,19 @@
   {
     "id": 1,
     "label": "Perte de poids",
-    "key": "weight_loss"
+    "key": "weight_loss",
+    "image": "https://c.pxhere.com/photos/af/d1/bodybuilder_weight_training_stress_muscular_athlete_gym_man-755456.jpg!d"
   },
   {
     "id": 2,
     "label": "Prise de poids",
-    "key": "weight_gain"
+    "key": "weight_gain",
+    "image": "https://c.pxhere.com/photos/e4/8e/action_adult_athlete_city_competition_crowd_endurance_event-1548041.jpg!d"
   },
   {
     "id": 3,
     "label": "Maintien de poids",
-    "key": "weight_maintenance"
+    "key": "weight_maintenance",
+    "image": "https://c.pxhere.com/photos/e7/ec/activity_adult_athlete_barbell_boy_brawny_crossfit_equipments-1556539.jpg!d"
   }
 ]

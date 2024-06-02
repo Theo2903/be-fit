@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, ScrollView, Dimensions } from "react-native";
+import { View, Text, StyleSheet, Image } from "react-native";
 import { Container } from "../../Components/Container/Container";
 import { Chip } from "react-native-elements";
 import { useRecoilState } from "recoil";
@@ -27,12 +27,18 @@ export const SelectDiet = () => {
         <Text style={s.title}>Quel est votre objectif  🍽️</Text>
         <Text style={s.subtitle}>
           Partagez vos objectifs et laissez BeFit personnaliser votre
-          expérience ! 🎯 
+          expérience ! 🎯
         </Text>
       </View>
       <View style={s.dietType}>
         {DietType.map((diet) => (
-          <View key={diet.id} style={s.chipContainer}>
+          <View key={diet.id} style={[s.chipContainer,  { backgroundColor: diet.id === selectDietType ? "#1a7a7a" : "#30d6d6" }] }>
+            <Image
+              source={{
+                uri: diet.image,
+              }}
+              style={s.image}
+            />
             <Chip
               title={diet.label}
               type="solid"
@@ -63,6 +69,10 @@ const s = StyleSheet.create({
     alignItems: "center",
     marginBottom: -10,
   },
+  image: {
+    height: 100,
+    borderRadius: 10,
+  },
   title: {
     fontSize: 24,
     fontWeight: "bold",
@@ -85,8 +95,11 @@ const s = StyleSheet.create({
     alignItems: "center",
   },
   chipContainer: {
+    height: '30%',
     width: "90%",
     marginBottom: 10,
+    borderRadius: 10,
+
   },
   chipStyle: {
     width: "100%",
