@@ -25,6 +25,6 @@ export const BackButton = ({ style }) => {
 const s = StyleSheet.create({
   iconStyle: {
     fontSize: 35,
-    color: "#1C1D1D",
+    color: "#30d6d6",
   },
 });
