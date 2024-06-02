@@ -11,8 +11,8 @@ export const BackButton = ({ style }) => {
   const navigation = useNavigation();
   return (
     <Icon
-      name="chevron-left"
-      size={30}
+      name="arrow-circle-left"
+      size={100}
       color="#000"
       solid={false}
       weight="light"
@@ -24,7 +24,7 @@ export const BackButton = ({ style }) => {
 
 const s = StyleSheet.create({
   iconStyle: {
-    fontSize: 20,
+    fontSize: 35,
     color: "#1C1D1D",
   },
 });

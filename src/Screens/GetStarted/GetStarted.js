@@ -24,7 +24,7 @@ export const GetStarted = () => {
       <View style={s.drawer}>
         <Container sty>
           <View>
-            <Text style={{ fontWeight: "bold", fontSize: 30, marginTop: 10 }}>
+            <Text style={{ fontSize: 35 }}>
               Bienvenue sur BeFit ! 🎉
             </Text>
             <Text style={{ marginTop: 30, fontSize:'20px' }}>
