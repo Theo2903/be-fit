@@ -1,7 +1,6 @@
 //Autheur: Salim, Ardon, Theo
 //Date: 14.05.2024
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
 import { AppNavigator } from "./src/Navigations/AppNavigation";
 import { RecoilRoot } from "recoil";
 import ReactNativeRecoilPersist, {

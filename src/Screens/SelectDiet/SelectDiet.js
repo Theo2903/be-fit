@@ -90,6 +90,13 @@ const s = StyleSheet.create({
     marginBottom: 20,
   },
   dietType: {
+    shadowColor: "black",
+    shadowOffset: {
+      width: 10,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
