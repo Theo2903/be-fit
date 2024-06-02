@@ -6,6 +6,7 @@ import {
   Dimensions,
   ScrollView,
 } from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
 import { Container } from "../../Components/Container/Container";
 import { BackButton } from "../../Components/Button/BackButton";
 import CircularProgress from "react-native-circular-progress-indicator";
@@ -20,20 +21,25 @@ export const RecipeDetail = () => {
 
   return (
     <View style={s.container}>
-      <BackButton  style={{position: 'absolute', zIndex: 100, top: 50, left: 10}}/>
-          <Image
-            source={{
-              uri: currentRecipe.image_url,
-            }}
-            style={s.image}
-          />
+      <BackButton style={{ position: 'absolute', zIndex: 100, top: 50, left: 10 }} />
+      <View>
+        <Image
+          source={{
+            uri: currentRecipe.image_url,
+          }}
+          style={s.image}
+        />
+        <LinearGradient
+          colors={['transparent', 'white']}
+          style={s.gradient}
+        />
+      </View>
       <View style={s.recipiesDrawer}>
         <Container>
           <ScrollView>
             <View>
-            <Text style={s.recipeTitle}>{currentRecipe.title}</Text>
+              <Text style={s.recipeTitle}>{currentRecipe.title}</Text>
               <View style={s.chartContainer}>
-                
                 <CircularProgress
                   value={currentRecipe.calories}
                   radius={90}
@@ -113,7 +119,7 @@ export const RecipeDetail = () => {
 const s = StyleSheet.create({
   container: {
     height: "100%",
-    margin: 0
+    margin: 0,
   },
   headerContainer: {
     flexDirection: "row",
@@ -129,12 +135,20 @@ const s = StyleSheet.create({
     width: "100%",
     height: 350,
   },
+  gradient: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    height: 100,
+  },
   recipiesDrawer: {
     height: "60%",
     backgroundColor: "#FFFF",
     borderColor: "#FFFF",
     borderWidth: 5,
     borderRadius: 30,
+    marginTop: -30, // Adjust as needed to position the drawer correctly
   },
   chartContainer: {
     flexDirection: "row",
