@@ -23,12 +23,14 @@ export const SelectDiet = () => {
 
   return (
     <Container>
-      <Text style={s.title}>Quel est votre objectif  🍽️</Text>
-      <Text style={s.subtitle}>
-        Partagez vos objectifs et laissez BeFit personnaliser votre
-        expérience ! 🎯 
-      </Text>
-      <ScrollView style={s.dietType}>
+      <View style={s.header}>
+        <Text style={s.title}>Quel est votre objectif  🍽️</Text>
+        <Text style={s.subtitle}>
+          Partagez vos objectifs et laissez BeFit personnaliser votre
+          expérience ! 🎯 
+        </Text>
+      </View>
+      <View style={s.dietType}>
         {DietType.map((diet) => (
           <View key={diet.id} style={s.chipContainer}>
             <Chip
@@ -44,7 +46,7 @@ export const SelectDiet = () => {
             />
           </View>
         ))}
-      </ScrollView>
+      </View>
       <Button
         title="Continuer"
         type="solid"
@@ -57,36 +59,44 @@ export const SelectDiet = () => {
 };
 
 const s = StyleSheet.create({
+  header: {
+    alignItems: "center",
+    marginBottom: -10,
+  },
   title: {
     fontSize: 24,
     fontWeight: "bold",
     color: "#333",
-    textAlign: "left",
-    marginBottom: 20,
-  },
-  dietType: {
-    flex: 1,
+    textAlign: "center",
+    marginBottom: 30,
   },
   subtitle: {
     fontSize: 18,
     fontWeight: "500",
     color: "#555",
     textAlign: "left",
+    fontStyle: "italic",
+    marginHorizontal: 20,
     marginBottom: 20,
   },
+  dietType: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
   chipContainer: {
-    padding: 10,
-    marginVertical: 5,
-    borderRadius: 20,
+    width: "90%",
+    marginBottom: 10,
   },
   chipStyle: {
-    width: Dimensions.get("window").width - 50,  // Take full width with some padding
+    width: "100%",
   },
   chipButton: {
     width: "100%",
     justifyContent: "center",
-    paddingVertical: 20,
-    backgroundColor: "#30d6d6",  // Default background color
+    paddingVertical: 30,
+    borderRadius: 20,
+    backgroundColor: "#30d6d6",
   },
   chipTitle: {
     fontSize: 18,
@@ -98,7 +108,10 @@ const s = StyleSheet.create({
     backgroundColor: "#30d6d6",
   },
   continueButtonContainer: {
-    width: "100%",
-    marginTop: 30,
+    width: "90%",
+    alignSelf: "center",
+    marginBottom: 20,
   },
 });
+
+export default SelectDiet;
