@@ -67,7 +67,6 @@ export const SelectDiet = () => {
 const s = StyleSheet.create({
   header: {
     alignItems: "center",
-    marginBottom: -10,
   },
   image: {
     height: 100,
@@ -112,11 +111,8 @@ const s = StyleSheet.create({
     width: "100%",
   },
   chipButton: {
-    width: "100%",
-    justifyContent: "center",
     paddingVertical: 30,
     borderRadius: 20,
-    backgroundColor: "#30d6d6",
   },
   chipTitle: {
     fontSize: 18,
@@ -124,11 +120,12 @@ const s = StyleSheet.create({
   },
   continueButton: {
     borderRadius: 20,
-    paddingVertical: 15,
+    width: '100%',
+    paddingVertical: 20,
     backgroundColor: "#30d6d6",
   },
   continueButtonContainer: {
-    width: "90%",
+    width: "100%",
     alignSelf: "center",
     marginBottom: 20,
   },
