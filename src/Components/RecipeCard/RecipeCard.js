@@ -55,10 +55,10 @@ const s = StyleSheet.create({
     width: windowWidth * 0.6,
   },
   image: {
-    backgroundColor:'#f9f9f9',
+    backgroundColor:'#3a9c9c',
     width: "100%",
-    height: 200,
-    borderRadius: 10,
+    height: 220,
+    borderRadius: 20,
     marginBottom: 10,
   },
   content: {},

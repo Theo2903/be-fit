@@ -85,7 +85,7 @@ export const Dashboard = () => {
   };
 
   return (
-    <Container>
+    <Container style={{backgroundColor: '#f9f9f9'}}>
       <View style={s.navigationBarArea}>
         <TouchableOpacity>
           <Ionicons name="menu" style={s.icon} />
@@ -102,7 +102,7 @@ export const Dashboard = () => {
         ]}
       >
         <SearchBar
-          containerStyle={{ backgroundColor: "#f2f2f2", flex: 1 }}
+          containerStyle={{ backgroundColor: "#f9f9f9", flex: 1 }}
           platform="ios"
           placeholder={
             isUseSearching ? "Entrez au moins 3 caractères" : "Recherche"
