@@ -1,4 +1,6 @@
 // UI & Component
+//Autheur: Salim
+//Date: 14.05.2024
 import { StyleSheet } from "react-native";
 // Navigation
 import { useNavigation } from "@react-navigation/native";

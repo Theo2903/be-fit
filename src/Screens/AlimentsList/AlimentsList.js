@@ -1,3 +1,6 @@
+//Autheur: Salim, Theo
+//Date: 15.05.2024
+
 import React, { useEffect, useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { FlashList } from "@shopify/flash-list";

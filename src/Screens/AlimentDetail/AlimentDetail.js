@@ -1,3 +1,5 @@
+//Autheur: Theo
+//Date: 14.05.2024
 import {
   View,
   Text,
@@ -10,7 +12,6 @@ import { Container } from "../../Components/Container/Container";
 import { BackButton } from "../../Components/Button/BackButton";
 import CircularProgress from "react-native-circular-progress-indicator";
 import { useNavigation, useRoute } from "@react-navigation/native";
-import Recipes from "../../../data/Recipies.json";
 import { useEffect, useState } from "react";
 import { EmptyScreen } from "../../Components/EmptyScreen/EmptyScreen";
 import axios from "axios";

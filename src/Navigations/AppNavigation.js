@@ -1,4 +1,6 @@
-// Navigation
+//Autheur: Salim, Ardon, Theo
+//Date: 14.05.2024
+//Navigation
 import { createStackNavigator } from "@react-navigation/stack";
 import { GetStarted } from "../Screens/GetStarted/GetStarted";
 import { NavigationContainer } from "@react-navigation/native";

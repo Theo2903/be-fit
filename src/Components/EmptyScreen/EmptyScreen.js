@@ -1,4 +1,6 @@
 // UI & Component
+//Autheur: Theo
+//Date: 14.05.2024
 import { View, Text, StyleSheet } from "react-native";
 import LottieView from "lottie-react-native";
 import FoodAnimation from "../../../assets/animations/food_animation.json";

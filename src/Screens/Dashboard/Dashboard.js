@@ -1,3 +1,6 @@
+//Autheur: Salim 
+//Date: 14.05.2024
+//Dashboard Page
 import {
   View,
   StyleSheet,

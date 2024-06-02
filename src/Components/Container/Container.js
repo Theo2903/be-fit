@@ -1,3 +1,5 @@
+//Autheur: Ardon 
+//Date: 14.05.2024
 // Stylesheet
 import { StyleSheet } from "react-native";
 // UI & Component
