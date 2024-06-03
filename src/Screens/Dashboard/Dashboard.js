@@ -105,7 +105,7 @@ export const Dashboard = () => {
           containerStyle={{  flex: 1, backgroundColor: '#f9f9f9' }}
           platform="ios"
           placeholder={
-            isUseSearching ? "Entrez au moins 3 caractères" : "Recherche"
+            isUseSearching ? "Entrez au moins 3 caractères" : "Rechercher aliment"
           }
           searchIcon={<Ionicons name="search-outline" style={s.icon} />}
           clearIcon={<></>} // We are setting empty icon because if we overide clear icon we lose also the function
