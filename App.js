@@ -1,6 +1,6 @@
 //Autheur: Salim, Ardon, Theo
 //Date: 14.05.2024
-import { StyleSheet } from "react-native";
+import { StyleSheet, View } from "react-native";
 import { AppNavigator } from "./src/Navigations/AppNavigation";
 import { RecoilRoot } from "recoil";
 import ReactNativeRecoilPersist, {
@@ -11,7 +11,9 @@ export default function App() {
   return (
     <RecoilRoot>
       <ReactNativeRecoilPersistGate store={ReactNativeRecoilPersist}>
-        <AppNavigator />
+        <View testID="app-root">
+          <AppNavigator />
+        </View>
       </ReactNativeRecoilPersistGate>
     </RecoilRoot>
   );

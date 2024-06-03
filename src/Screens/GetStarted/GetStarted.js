@@ -17,7 +17,7 @@ export const GetStarted = () => {
   };
 
   return (
-    <View style={s.container}>
+    <View style={s.container} testID="get-started-screen">
       <Container>
         <LottieView source={HeroAnimation} style={s.animation} autoPlay loop />
       </Container>
