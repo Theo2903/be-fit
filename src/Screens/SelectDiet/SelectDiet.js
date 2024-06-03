@@ -1,3 +1,5 @@
+//Auteur: Theo
+
 import { View, Text, StyleSheet, Image } from "react-native";
 import { Container } from "../../Components/Container/Container";
 import { Chip } from "react-native-elements";

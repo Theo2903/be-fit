@@ -1,3 +1,4 @@
+//Auteur: Salim 
 import {
   View,
   Text,
