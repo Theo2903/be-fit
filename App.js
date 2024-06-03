@@ -11,9 +11,7 @@ export default function App() {
   return (
     <RecoilRoot>
       <ReactNativeRecoilPersistGate store={ReactNativeRecoilPersist}>
-        <View testID="app-root">
-          <AppNavigator />
-        </View>
+        <AppNavigator testID="app-root" />
       </ReactNativeRecoilPersistGate>
     </RecoilRoot>
   );
