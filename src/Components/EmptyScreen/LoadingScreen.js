@@ -1,5 +1,5 @@
 // UI & Component
-//Autheur: Theo
+//Autheur: Salim
 //Date: 14.05.2024
 import { View, StyleSheet } from "react-native";
 import LottieView from "lottie-react-native";
