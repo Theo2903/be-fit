@@ -13,7 +13,7 @@ import CircularProgress from "react-native-circular-progress-indicator";
 import { useNavigation, useRoute } from "@react-navigation/native";
 import { useEffect, useState } from "react";
 import { EmptyScreen } from "../../Components/EmptyScreen/EmptyScreen";
-import { getAliment } from "./AlimentsQuerys";
+import { getAlimentById } from "./AlimentsQuerys";
 
 export const AlimentDetail = () => {
   const [alimentData, setAlimentData] = useState(null);
@@ -22,7 +22,7 @@ export const AlimentDetail = () => {
   const navigation = useNavigation();
 
   useEffect(() => {
-    getAliment(setAlimentData, id);
+    getAlimentById(setAlimentData, id);
   }, []);
 
   const handleGoBack = () => {
