@@ -102,7 +102,7 @@ export const Dashboard = () => {
         ]}
       >
         <SearchBar
-          containerStyle={{  flex: 1, }}
+          containerStyle={{  flex: 1, backgroundColor: '#f9f9f9' }}
           platform="ios"
           placeholder={
             isUseSearching ? "Entrez au moins 3 caractères" : "Recherche"
